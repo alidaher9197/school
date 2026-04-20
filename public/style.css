@@ -1,0 +1,123 @@
+
+ html, body {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background: blue;
+    color: white;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* .login_alert{
+    background-color: rgb(82, 78, 78);
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px blue;
+}
+.login_alert>form>button{
+    background-color: blue(25, 148, 111);
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgb(62, 60, 60);
+    padding:5px 15px;
+} */
+ body {
+    font-family: Arial, sans-serif;
+}
+
+/* Background overlay (important for "alert feel") */
+.login_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login box */
+.login_alert {
+    background: linear-gradient(145deg, #2c2f36, #1f2228);
+    width: 320px;
+    padding: 25px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    color: white;
+}
+
+/* Title */
+.login_alert h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+.login_alert input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #3a3f48;
+    color: white;
+}
+
+.login_alert input::placeholder {
+    color: #bbb;
+}
+
+/* Button */
+.login_alert button {
+    background: linear-gradient(90deg, #4f46e5, #3b82f6);
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.login_alert button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+}
+
+/* Close button (optional style) */
+.login_alert .close {
+    background: transparent;
+    border: 1px solid #666;
+}
+.login_alert .close:hover {
+    background: #444;
+}
